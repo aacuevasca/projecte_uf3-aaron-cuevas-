@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <script src="https://kit.fontawesome.com/3e4c1a6931.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        html {
+            scroll-padding-top: 70px;
+        }
+
+        .img-carousel {
+            max-height: 200px; 
+            width: auto; 
+        }
+        .img_nav{
+            height: 20px;
+            width: 200px;
+        }
+    </style>
+    <title>Diaris!</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img class="img_nav" src="https://www.lavanguardia.com/images/logo.png" alt="La Vanguardia Logo" href="/"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/deportes"> <i class="fa-solid fa-football"> </i> Deportes</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/politica"> <i class="fa-solid fa-landmark"> </i> Política</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/vida"> <i class="fa-solid fa-heart"> </i> Vida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/comer"> <i class="fa-solid fa-burger"> </i> Comer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/lavanguardia/ciencia"> <i class="fa-solid fa-flask"> </i> Ciencia</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://www.lavanguardia.com"><img src="../static/img/lavanguardia.jpg" class="d-block w-100 img-carousel"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.elpuntavui.cat/barcelona.html"><img src="../static/img/elpuntavui.jpg" class="d-block w-100 img-carousel"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://agora.xtec.cat/iesjoaquimmir/"><img src="../static/img/insjoaquimmir.jpg" class="d-block w-100 img-carousel"></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-3 p-4 border rounded">
+        <h1 id="deportes"> <i class="fa-solid fa-football"> </i> <a href="/lavanguardia/deportes">Deportes</a></h1>
+        <p>Notícies sobre esdeveniments esportius recents, anàlisi d'equips, perfils d'atletes destacats, resultats de partits, estadístiques i consells d'entrenament.</p>
+    </div>
+
+    <div class="container mt-3 p-4 border rounded">
+        <h1 id="politica"> <i class="fa-solid fa-landmark"></i> <a href="/lavanguardia/politica">Política</a></h1>
+        <p>Notícies sobre esdeveniments polítics recents, anàlisi de polítiques governamentals, perfils de líders polítics, cobertura d'eleccions, debats legislatius i altres temes rellevants en l'àmbit polític.</p>
+    </div>
+
+    <div class="container mt-3 p-4 border rounded">
+        <h1 id="vida"> <i class="fa-solid fa-heart"></i> <a href="/lavanguardia/vida">Vida</a></h1>
+        <p>Articles sobre salut física i mental, consells per al cuidat personal, relacions interpersonals, educació, desenvolupament personal, viatges, cuina, hobbies i oci.</p>
+    </div>
+
+    <div class="container mt-3 p-4 border rounded">
+        <h1 id="comer"> <i class="fa-solid fa-burger"></i> <a href="/lavanguardia/comer">Comer</a></h1>
+        <p>Un recull de delicioses receptes de cuina, consells de nutrició per a una alimentació equilibrada, ressenyes de restaurants locals i internacionals, guies d'ingredients per a platillos casolans, notícies sobre tendències culinàries emergents i entrevistes amb reconeguts xefs del món gastronòmic.</p>
+    </div>
+
+    <div class="container mt-3 p-4 border rounded">
+        <h1 id="ciencia"> <i class="fa-solid fa-flask"></i> <a href="/lavanguardia/ciencia">Ciencia</a></h1>
+        <p>Notícies sobre els darrers descobriments en diferents camps científics, explicacions clares i accessibles sobre conceptes científics complexos, perfils de científics destacats, cobertura d'esdeveniments científics rellevants i reflexions sobre l'impacte de la ciència en la societat.</p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <div class="container mt-3 p-4 border rounded">
+            <h1>El Punt Avui</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Sección</th>
+                        <th scope="col" >Enlace</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Territori</td>
+                        <td> <i class="fa-solid fa-map"></i> <a href="/elpuntavui/territori">Anar a Territori</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Societat</td>
+                        <td> <i class="fa-solid fa-person"></i> <a href="/elpuntavui/societat">Anar a Societat</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Politica</td>
+                        <td> <i class="fa-solid fa-landmark"></i> <a href="/elpuntavui/politica">Anar a Politica</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Economia</td>
+                        <td> <i class="fa-solid fa-money-bill"></i> <a href="/elpuntavui/economia">Anar a Economia</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </body>
+
+</html>
